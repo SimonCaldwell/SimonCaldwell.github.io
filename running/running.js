@@ -5,9 +5,9 @@ var runs = {};
 function loadMapScenario() {
     map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
         /* No need to set credentials if already passed in URL */
-        center: new Microsoft.Maps.Location(53.4808, -1.2426),
-        mapTypeId: Microsoft.Maps.MapTypeId.aerial,
-        zoom: 7
+        center: new Microsoft.Maps.Location(53.969584, -1.0580749),
+        mapTypeId: Microsoft.Maps.MapTypeId.ordnanceSurvey,
+        zoom: 10
     });
 
     layer = new Microsoft.Maps.Layer();
