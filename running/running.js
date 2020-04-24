@@ -92,8 +92,9 @@ var selectAll = document.getElementsByClassName("routeAll")[0];
 selectAll.addEventListener('change', function () {
     //if (this.checked) {
         var checkboxes = document.querySelectorAll(".route");
+        var chk = this.checked;
         checkboxes.forEach(function (checkbox) {
-            checkbox.checked=this.checked;
+            checkbox.checked=chk;
         });
         redraw();
     //}
