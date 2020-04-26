@@ -100,3 +100,26 @@ selectAll.addEventListener('change', function () {
     //}
 });
 
+var selectRides = document.getElementsByClassName("routeRides")[0];
+selectAll.addEventListener('change', function () {
+    //if (this.checked) {
+        var checkboxes = document.querySelectorAll(".ride");
+        var chk = this.checked;
+        checkboxes.forEach(function (checkbox) {
+            checkbox.checked=chk;
+        });
+        redraw();
+    //}
+});
+
+var selectRuns = document.getElementsByClassName("routeRuns")[0];
+selectAll.addEventListener('change', function () {
+    //if (this.checked) {
+        var checkboxes = document.querySelectorAll(".run");
+        var chk = this.checked;
+        checkboxes.forEach(function (checkbox) {
+            checkbox.checked=chk;
+        });
+        redraw();
+    //}
+});
