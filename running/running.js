@@ -101,7 +101,7 @@ selectAll.addEventListener('change', function () {
 });
 
 var selectRides = document.getElementsByClassName("routeRides")[0];
-selectAll.addEventListener('change', function () {
+selectRides.addEventListener('change', function () {
     //if (this.checked) {
         var checkboxes = document.querySelectorAll(".ride");
         var chk = this.checked;
@@ -113,7 +113,7 @@ selectAll.addEventListener('change', function () {
 });
 
 var selectRuns = document.getElementsByClassName("routeRuns")[0];
-selectAll.addEventListener('change', function () {
+selectRuns.addEventListener('change', function () {
     //if (this.checked) {
         var checkboxes = document.querySelectorAll(".run");
         var chk = this.checked;
