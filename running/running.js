@@ -88,7 +88,7 @@ checkboxes.forEach(function (checkbox) {
     });
 });
 
-var selectAll = document.getElementsByClassName("routeAll")[0];
+var selectAll = document.getElementsById("routeAll")[0];
 selectAll.addEventListener('change', function () {
     //if (this.checked) {
         var checkboxes = document.querySelectorAll(".route");
