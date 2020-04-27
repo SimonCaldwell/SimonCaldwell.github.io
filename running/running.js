@@ -100,7 +100,7 @@ selectAll.addEventListener('change', function () {
     //}
 });
 
-var selectRides = document.getElementsByClassName("routeRides")[0];
+var selectRides = document.getElementById("routeRides");
 selectRides.addEventListener('change', function () {
     //if (this.checked) {
         var checkboxes = document.querySelectorAll(".ride");
@@ -112,7 +112,7 @@ selectRides.addEventListener('change', function () {
     //}
 });
 
-var selectRuns = document.getElementsByClassName("routeRuns")[0];
+var selectRuns = document.getElementById("routeRuns");
 selectRuns.addEventListener('change', function () {
     //if (this.checked) {
         var checkboxes = document.querySelectorAll(".run");
@@ -124,7 +124,7 @@ selectRuns.addEventListener('change', function () {
     //}
 });
 
-var selectShops = document.getElementsByClassName("routeShops")[0];
+var selectShops = document.getElementById("routeShops");
 selectShops.addEventListener('change', function () {
     //if (this.checked) {
         var checkboxes = document.querySelectorAll(".shop");
