@@ -123,3 +123,15 @@ selectRuns.addEventListener('change', function () {
         redraw();
     //}
 });
+
+var selectShops = document.getElementsByClassName("routeShops")[0];
+selectShops.addEventListener('change', function () {
+    //if (this.checked) {
+        var checkboxes = document.querySelectorAll(".shop");
+        var chk = this.checked;
+        checkboxes.forEach(function (checkbox) {
+            checkbox.checked=chk;
+        });
+        redraw();
+    //}
+});
