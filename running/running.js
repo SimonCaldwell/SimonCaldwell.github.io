@@ -135,3 +135,15 @@ selectShops.addEventListener('change', function () {
         redraw();
     //}
 });
+
+var selectWalks = document.getElementById("routeWalks");
+selectWalks.addEventListener('change', function () {
+    //if (this.checked) {
+        var checkboxes = document.querySelectorAll(".walk");
+        var chk = this.checked;
+        checkboxes.forEach(function (checkbox) {
+            checkbox.checked=chk;
+        });
+        redraw();
+    //}
+});
