@@ -12,3 +12,19 @@ body {
 .column {
     flex: 90%;
 }
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  flex: 0 0 50%;
+  border: 1px solid grey;
+  padding: 1em;
+  display: flex;
+  align-items: flex-end;
+}
