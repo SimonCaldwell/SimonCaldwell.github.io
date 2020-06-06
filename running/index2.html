@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Lockdown Exercise - Simon Caldwell</title>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+        <link rel="stylesheet" type="text/css" href="running.css">
+    </head>
+    <body>
+
+        <div class="row">
+
+            <div class="column" id='myMap' style='height: 100vh;'></div>
+
+            <div class="column" id='printoutPanel'>
+
+                <span>
+                    <label><input id="routeAll" type="checkbox">Select All</input></label>
+                    <label><input id="routeRides" type="checkbox">Select Rides</input></label>
+                    <label><input id="routeRuns" type="checkbox">Select Runs</input></label>
+                    <label><input id="routeWalks" type="checkbox">Select Walks</input></label>
+                    <label><input id="routeShops" type="checkbox">Select Shopping</input></label>
+                </span>
+                <ul>
+                <!-- https://www.w3schools.com/colors/colors_picker.asp -->
+                <li><label><input class="route shop" type="checkbox" value="Weekly_shop0406.xml" data-colour="#ff00ff">June 4 Shopping</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Buttercrambe_ride.xml" data-colour="#ff0000">June 2</input></label></li>
+                <li><label><input class="route walk" type="checkbox" value="Mallerstang_and_Wild_Boar_round.xml" data-colour="#ffff00">May 31 walk</input></label></li>
+                <li><label><input class="route walk" type="checkbox" value="Bull_Scar.xml" data-colour="#ffff00">May 30 walk</input></label></li>
+                <li><label><input class="route shop" type="checkbox" value="Tour_of_Yorks_Cycle_Shops.xml" data-colour="#ff00ff">May 29 Shopping</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Evening_Tillmire_ride.xml" data-colour="#ff0000">May 28</input></label></li>
+                <li><label><input class="route shop" type="checkbox" value="Weekly_shop_again.xml" data-colour="#ff00ff">May 28 Shopping</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Bubwith_Rail_Trail_loop.xml" data-colour="#ff0000">May 25</input></label></li>
+                <li><label><input class="route walk" type="checkbox" value="Wolds_walk.xml" data-colour="#ffff00">May 24 walk</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Cropton_Forest.xml" data-colour="#ff0000">May 23</input></label></li>
+                <li><label><input class="route shop" type="checkbox" value="Weekly_shop_number_543.xml" data-colour="#ff00ff">May 21 Shopping</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Scorchio.xml" data-colour="#ff0000">May 20</input></label></li>
+                <li><label><input class="route walk" type="checkbox" value="First_taste_of_freedom.xml" data-colour="#ffff00">May 17 walk</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Alne_loop.xml" data-colour="#ff0000">May 16</input></label></li>
+                <li><label><input class="route shop" type="checkbox" value="York_Food_Circle3.xml" data-colour="#ff00ff">May 14 Shopping</input></label></li>
+                <li><label><input class="route shop" type="checkbox" value="Weekly_shop1404.xml" data-colour="#ff00ff">May 14 Shopping</input></label></li>
+                <li><label><input class="route run" type="checkbox" value="Huge_walk_in_the_Cumbrian_Fells.xml" data-colour="#0000ff">May 13 Run</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Castle_Howard_loop.xml" data-colour="#ff0000">May 9</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Wolds_loop.xml" data-colour="#ff0000">May 8</input></label></li>
+                <li><label><input class="route shop" type="checkbox" value="York_Food_Circle_2.xml" data-colour="#ff00ff">May 7 Shopping 3</input></label></li>
+                <li><label><input class="route shop" type="checkbox" value="York_Food_Circle.xml" data-colour="#ff00ff">May 7 Shopping 2</input></label></li>
+                <li><label><input class="route shop" type="checkbox" value="Shoptastic.xml" data-colour="#ff00ff">May 7 Shopping</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="TillmireCircuit.xml" data-colour="#ff0000">May 6</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Lockdown_Day_after_yesterday.xml" data-colour="#ff0000">May 5</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="BalloonTree.xml" data-colour="#ff0000">May 3</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Church_Fenton_loop.xml" data-colour="#ff0000">May 2</input></label></li>
+                <li><label><input class="route shop" type="checkbox" value="Weekly_Shop3004.xml" data-colour="#ff00ff">April 30 Shopping</input></label></li>
+                <li><label><input class="route shop walk" type="checkbox" value="Emergency_Shopping.xml" data-colour="#ff00ff">April 29 Shopping</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Lockdown_Week_X.xml" data-colour="#ff0000">April 27</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Too_nice_to_stay_inside.xml" data-colour="#ff0000">April 26</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Skipwith_Loop.xml" data-colour="#ff0000">April 25</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Lockdown_Day_n_1.xml" data-colour="#ff0000">April 23</input></label></li>
+                <li><label><input class="route shop" type="checkbox" value="Shopping5.xml" data-colour="#ff00ff">April 23 Shopping</input></label></li>
+                <li><label><input class="route run" type="checkbox" value="World_Curlew_Day.xml" data-colour="#0000ff">April 21 Run</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Aldwark_loop.xml" data-colour="#ff0000">April 19</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Lockdown_Day_n.xml" data-colour="#ff0000">April 17</input></label></li>
+                <li><label><input class="route shop" type="checkbox" value="Shopping4.xml" data-colour="#ff00ff">April 16 Shopping</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="More_snipe_.xml" data-colour="#ff0000">April 15</input></label></li>
+                <li><label><input class="route run" type="checkbox" value="Proof_that_cycling_doesnt_maintain_your_fitness_for_running.xml" data-colour="#fff00">April 13 Run</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Another_hill.xml" data-colour="#ff0000">April 11</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Lockdown_Day_er_fuck_knows_I_think_it_might_be_Easter_Sunday_.xml" data-colour="#ff0000">April 9</input></label></li>
+                <li><label><input class="route shop" type="checkbox" value="Shopping3.xml" data-colour="#ff00ff">April 10 Shopping</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Snipe.xml" data-colour="#ff0000">April 7</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Desperately_seeking_a_hill.xml" data-colour="#ff0000">April 5</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Wildlife_Safari.xml" data-colour="#ff0000">April 3</input></label></li>
+                <li><label><input class="route shop" type="checkbox" value="Shopping2.xml" data-colour="#ff00ff">April 3 Shopping</input></label></li>
+                <li><label><input class="route shop" type="checkbox" value="Shopping3103.xml" data-colour="#ff00ff">March 31 Shopping</input></label></li>
+                <li><label><input class="route run" type="checkbox" value="Lockdown_Day_7.xml" data-colour="#0000ff">March 29 Run</input></label></li>
+                <li><label><input class="route run" type="checkbox" value="Lockdown_Day_6.xml" data-colour="#0000ff">March 28 Run</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Lockdown_Day_5.xml" data-colour="#ff0000">March 27</input></label></li>
+                <li><label><input class="route ride" type="checkbox" value="Lockdown_day_4.xml" data-colour="#ff0000">March 26</input></label></li>
+                
+            </ul>
+            </div>
+        </div>
+
+        <script type='text/javascript' src='running.js'></script>
+        <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=Aj7Se7yBLt1YZfgP37O6pQhLIts0HJT_1y5maUH3vIikHcBtjRRtvCUbZoxOncIg &callback=loadMapScenario' async defer></script>
+        <!--<script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AoMlZ5rJywSt5Yeba_5_EpNUkmzPkotnJs5d0K5XC16zY6xxShIH4Ipny7xWCLFM &callback=loadMapScenario' async defer></script>-->
+    </body>
+</html>
