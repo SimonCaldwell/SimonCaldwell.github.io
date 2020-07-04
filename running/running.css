@@ -23,7 +23,7 @@ ul {
 }
 li {
   flex: 0 0 25%;
-  padding: 1em;
+  padding: 10px;
   display: flex;
   align-items: flex-end;
 }
