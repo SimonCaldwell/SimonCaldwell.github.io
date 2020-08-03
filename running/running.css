@@ -9,9 +9,14 @@ body {
     display: flex;
 }
 
-.column {
-    flex: 90%;
+.mapColumn {
+    flex: 2;
 }
+
+.panelColumn {
+    flex: 1;
+}
+
 * {
   box-sizing: border-box;
 }
