@@ -25,6 +25,7 @@ ul {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  font-size: smaller;
 }
 li {
   flex: 0 0 25%;
